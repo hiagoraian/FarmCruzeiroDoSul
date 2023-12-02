@@ -10,7 +10,14 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <div style="display:flex;">
                         <div style="width:60%;">
-                            <h2 class="text-lg font-semibold mb-4">Lista de Equinos</h2>
+                            <div class="container-flex">
+                            <div>
+                                <h2 class="text-lg font-semibold mb-4">Lista de Equinos</h2>
+                            </div>
+                            <div style="margin-left: 50%;">
+                                <a href="{{ route('dashboard') }}" class="btn-create">Adicionar Equino</a>
+                            </div>
+                        </div>
                             <table>
                                 <thead>
                                     <tr>
@@ -36,7 +43,14 @@
 
                         </div>
                         <div style="width:40%;">
-                            <h2 class="text-lg font-semibold mb-4">Lista de Produtos</h2>
+                        <div class="container-flex">
+                            <div>
+                                <h2 class="text-lg font-semibold mb-4">Lista de Produtos</h2>
+                            </div>
+                            <div style="margin-left: 22%;">
+                                <a href="{{ route('dashboard') }}" class="btn-create">Adicionar Produtos</a>
+                            </div>
+                        </div>
                             <table>
                                 <thead>
                                     <tr>
@@ -104,4 +118,19 @@
         border-radius: 5px;
         transition: background-color 0.3s;
     }
+    .container-flex {
+    display: flex;
+    
+    margin: 0;
+}
+
+.btn-create {
+    display: inline-block;
+    padding: 4px 16px;
+    background-color: rgb(59 130 246 / .5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 </style>
