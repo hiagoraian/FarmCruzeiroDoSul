@@ -15,4 +15,16 @@ class ProductController extends Controller
 
         return redirect()->route('dashboard');
     }
+
+    public function create(){
+        return view('product.create');
+    }
+
+    public function store(Request $request, Product $product){
+        
+        $data = $request->all();
+        $product->create($data);
+
+        return redirect()->route('dashboard');
+    }
 }

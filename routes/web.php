@@ -31,6 +31,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('dashboard/equine/{id}', [EquineController::class, 'destroy'])->name('dashboard.equines.destroy');
 
     Route::delete('/dashboard/{id}', [ProductController::class, 'destroy'])->name('dashboard.product.destroy');
+    Route::get('/dashboard/create/produtos',[ProductController::class, 'create'])->name('dashboard.product.create');
+    Route::post('/dashboard',[ProductController::class, 'store'])->name('dashboard.product.store');
     
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

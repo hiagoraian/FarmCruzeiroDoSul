@@ -12,7 +12,7 @@
                         <div style="width:60%;">
                             <div class="container-flex">
                             <div>
-                                <h2 class="text-lg font-semibold mb-4">Lista de Equinos</h2>
+                            <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">{{ __('Lista de Equinos') }}</h2>
                             </div>
                             <div style="margin-left: 50%;">
                                 <a href="{{ route('dashboard') }}" class="btn-create">Adicionar Equino</a>
@@ -45,10 +45,10 @@
                         <div style="width:40%;">
                         <div class="container-flex">
                             <div>
-                                <h2 class="text-lg font-semibold mb-4">Lista de Produtos</h2>
+                            <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">{{ __('Lista de produto') }}</h2>
                             </div>
                             <div style="margin-left: 22%;">
-                                <a href="{{ route('dashboard') }}" class="btn-create">Adicionar Produtos</a>
+                                <a href="{{ route('dashboard.product.create') }}" class="btn-create">Adicionar Produtos</a>
                             </div>
                         </div>
                             <table>
