@@ -33,7 +33,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard/create/equino',[EquineController::class, 'create'])->name('dashboard.equines.create');
     Route::post('/dashboard/equinos',[EquineController::class, 'store'])->name('dashboard.equines.store');
     Route::get('/dashboard/edit/{id}',[EquineController::class, 'edit'])->name('dashboard.equines.edit');
-    Route::put('dashboard/edit/equinos/{id}', [EquineController::class, 'update'])->name('dashboard.equines.update');
+    Route::put('/dashboard/edit/equinos/{id}', [EquineController::class, 'update'])->name('dashboard.equines.update');
 
     Route::delete('/dashboard/{id}', [ProductController::class, 'destroy'])->name('dashboard.product.destroy');
     Route::get('/dashboard/create/produtos',[ProductController::class, 'create'])->name('dashboard.product.create');
