@@ -23,6 +23,9 @@
                         </form>
                         </div>
                         <div style="padding-left: 16px;">
+                            <a href="{{route('dashboard.equines.edit', $equine->id)}}"><button class="btn" type="submit">Editar</button></a>
+                        </div>
+                        <div style="padding-left: 16px;">
                             <a href="{{route('dashboard')}}"><button class="btn" type="submit">Voltar</button></a>
                         </div>
                 </div>
