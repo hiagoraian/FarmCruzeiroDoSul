@@ -14,4 +14,11 @@ class DashboardController extends Controller
 
         return view('dashboard', compact('equines', 'products'));
     }
+
+    public function show (string|int $id){
+        if(!$equine = Equine::find($id))
+           return back();
+    
+    return view('equine.show', compact('equine'));
+    }
 }

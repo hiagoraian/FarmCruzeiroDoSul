@@ -27,6 +27,9 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('dashboard/{id}', [DashboardController::class, 'show'])->name('dashboard.show');
+    Route::delete('dashboard/equine/{id}', [EquineController::class, 'destroy'])->name('dashboard.equines.destroy');
+
     Route::delete('/dashboard/{id}', [ProductController::class, 'destroy'])->name('dashboard.product.destroy');
     
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

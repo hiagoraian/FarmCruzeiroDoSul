@@ -27,7 +27,7 @@
                                         <td>{{$equine->race}}</td>
                                         <td>{{$equine->age}}</td>
                                         <td>
-                                            <button class="btn">Detalhes</button>
+                                            <a href="{{route('dashboard.show', $equine->id)}}"><button class="btn">Detalhes</button></a>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -97,7 +97,7 @@
 
     .btn {
         display: inline-block;
-        padding: 4px 8px;
+        padding: 4px 16px;
         background-color: rgb(59 130 246 / .5);
         color: #fff;
         text-decoration: none;
