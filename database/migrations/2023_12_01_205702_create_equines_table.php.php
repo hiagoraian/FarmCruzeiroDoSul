@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('mother');
             $table->string('description');
             $table->string('age');
+            $table->string('gender');
             $table->timestamps();
         });
     }

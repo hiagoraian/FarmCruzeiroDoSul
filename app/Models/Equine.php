@@ -15,7 +15,8 @@ class Equine extends Model
         'father',
         'mother',
         'description',
-        'age'
+        'age',
+        'gender'
 
     ];
 }
