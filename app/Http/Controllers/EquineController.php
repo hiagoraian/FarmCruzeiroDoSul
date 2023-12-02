@@ -15,4 +15,15 @@ class EquineController extends Controller
 
     return redirect()->route('dashboard');
   }
+
+  public function create(){
+    return view ('equine.create');
+  }
+
+  public function store(Request $request, Equine $equine){
+    $data = $request->all();
+    $equine->create($data);
+
+    return redirect()->route('dashboard');
+  }
 }

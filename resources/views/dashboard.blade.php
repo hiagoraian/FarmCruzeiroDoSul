@@ -15,7 +15,7 @@
                             <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">{{ __('Lista de Equinos') }}</h2>
                             </div>
                             <div style="margin-left: 50%;">
-                                <a href="{{ route('dashboard') }}" class="btn-create">Adicionar Equino</a>
+                                <a href="{{ route('dashboard.equines.create') }}" class="btn-create">Adicionar Equino</a>
                             </div>
                         </div>
                             <table>
