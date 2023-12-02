@@ -14,16 +14,16 @@
                         <thead>
                             <th>Nome</th>
                             <th>Raça</th>
-                            <th>Pai</th>
-                            <th>Mãe</th>
+                            <th>Sexo</th>
+                            <th>Idade</th>
                         </thead>
                         <tbody>
                             @foreach ($equines as $equine)
                             <tr>
                                 <td>{{$equine->name}}</td>
                                 <td>{{$equine->race}}</td>
-                                <td>{{$equine->father}}</td>
-                                <td>{{$equine->mother}}</td>
+                                <td>{{$equine->gender}}</td>
+                                <td>{{$equine->age}}</td>
                                 <td>
                                     <a href=" ">Detalhes</a>
                                     <a href=" ">Editar</a>
@@ -36,18 +36,14 @@
                     <div>
                     <table>
                         <thead>
-                            <th>Ração</th>
-                            <th>Sela</th>
-                            <th>Vacinas</th>
-                            <th>Acessorios</th>
+                            <th>Nome</th>
+                            <th>Descrição</th>
                         </thead>
                         <tbody>
                             @foreach ($products as $product)
                             <tr>
-                                <td>{{$product->portion}}</td>
-                                <td>{{$product->saddle}}</td>
-                                <td>{{$product->vaccines}}</td>
-                                <td>{{$product->accessories}}</td>
+                                <td>{{$product->name}}</td>
+                                <td>{{$product->description}}</td>
                             </tr>
                             @endforeach
                         </tbody>
